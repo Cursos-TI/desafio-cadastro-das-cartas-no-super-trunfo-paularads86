@@ -26,6 +26,8 @@ int main() {
     int pontosTuristicos1, pontosTuristicos2;
     float area1, area2;
     float PIB1, PIB2;
+    double densidadePopulacional;
+    double PIBperCapta;
 
     printf("Carta1\n");
     
@@ -49,6 +51,15 @@ int main() {
 
     printf("Digite seu PIB:");
     scanf("%f", &PIB1);
+
+    //calculo da densidade populacional
+    densidadePopulacional = (double) populacao1/area1;
+    printf("Densidade Populacional: %lf\n", densidadePopulacional);
+
+    //cálculo do PIB percapta
+    PIBperCapta = (double) PIB1/populacao1;
+    printf("PIB per capta: %lf\n", PIBperCapta);
+
 
 
     printf("Carta2\n");
@@ -74,6 +85,13 @@ int main() {
     printf("Digite seu PIB:");
     scanf("%f", &PIB2);
     
+    //calculo da densidade populacional
+    densidadePopulacional = (double) populacao2/area2;
+    printf("Densidade Populacional: %lf\n", densidadePopulacional);
+
+    //cálculo do PIB percapta
+    PIBperCapta = (double) PIB2/populacao2;
+    printf("PIB per capta: %lf\n", PIBperCapta);
     
 
     return 0;
